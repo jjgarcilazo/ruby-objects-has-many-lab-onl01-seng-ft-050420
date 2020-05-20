@@ -9,7 +9,7 @@ class Artist
    end
 
  def songs
-  Song.all.select { |song| song.artist == adele } 
+  Song.all.select { |song| song.artist == adele }
  #since song belongs to artist, we can call song.artist and it shoudl return the instnace of the artist that it's associated with
  end
 
