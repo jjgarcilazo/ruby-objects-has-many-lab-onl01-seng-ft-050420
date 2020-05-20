@@ -16,7 +16,8 @@ end
 
 
   def songs
-    @songs
+    @songs << song
+    
     binding.pry
   end
 
