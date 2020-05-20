@@ -9,7 +9,7 @@ class Artist
    end
 
  def songs
-  Song.all.select { |song| song.artist == adele }
+  Song.all.select { |song| song.artist == self }
  #since song belongs to artist, we can call song.artist and it shoudl return the instnace of the artist that it's associated with
  end
 
@@ -25,8 +25,9 @@ class Artist
   Song.all.count
  end
 
-  def add_song(song)
-  song.artist = self
+ def add_song(song)
+ @songs << song
+ song.artist = self
 end
 
 end
