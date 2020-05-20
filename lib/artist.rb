@@ -37,4 +37,3 @@ def save
     @@all
   end
 end
-end
